@@ -7,3 +7,11 @@ class Course(BaseModel):
     name: str
     location: str
     holes: int
+
+class CourseRequest(BaseModel):
+    name: str
+    location: str
+    holes: int
+
+class CourseResponse(BaseModel):
+    id: UUID
